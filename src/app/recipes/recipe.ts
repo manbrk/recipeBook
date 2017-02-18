@@ -1,5 +1,5 @@
 import {Ingridient} from "../shared/ingridient";
 export class Recipe {
-    constructor(public name, public description, public imagePath, public ingridients: Ingridient[]
+    constructor(public name: string, public description: string, public imagePath: string, public ingridients: Ingridient[]
     ) {}
 }
