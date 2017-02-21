@@ -11,4 +11,8 @@ export class ShoppingListService {
   addItems(items: Ingridient[]) {
       Array.prototype.push.apply(this.items, items);
   }
+
+  addItem(item: Ingridient) {
+      this.items.push(item);
+  }
 }
