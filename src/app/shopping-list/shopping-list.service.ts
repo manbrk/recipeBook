@@ -15,4 +15,9 @@ export class ShoppingListService {
   addItem(item: Ingridient) {
       this.items.push(item);
   }
+
+  editItem(oldItem: Ingridient, newItem: Ingridient) {
+      this.items[this.items.indexOf(oldItem)] = newItem;
+  }
+
 }
